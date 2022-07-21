@@ -5,7 +5,7 @@ click_to_convert.addEventListener('click',function() {
   recognition.interimResults = true;
 
 recognition.addEventListener('result', e=>{
-  const transcript = Array.from(e.result)
+  const transcript = Array.from(e.results)
   .map(result =>result[0])
   .map(result => result.transcript)
 
